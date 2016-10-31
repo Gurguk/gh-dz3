@@ -35,19 +35,19 @@ class Parser extends Log
 
     private function startParse()
     {
-        // Some code
+        $xml = simplexml_load_file($this->folderpath.'/xml.xml');
+        $this->finishParse($xml);
     }
 
-    private function finishParse()
+    private function finishParse($xml)
     {
-        // Some code
+        var_dump($xml);
     }
 
     public function parseXML()
     {
         $this->getPostData();
         $this->startParse();
-        $this->finishParse();
     }
 
 }

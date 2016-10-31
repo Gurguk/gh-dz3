@@ -12,7 +12,7 @@ class Parser extends Log
     public $logfile;
     public $folderpath;
 
-    public function __construct($folderpath,$logfile)
+    public function __construct($folderpath, $logfile)
     {
         $this->logfile = $logfile;
         $this->folderpath = $folderpath;
@@ -49,5 +49,4 @@ class Parser extends Log
         $this->getPostData();
         $this->startParse();
     }
-
 }

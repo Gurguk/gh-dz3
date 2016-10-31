@@ -2,7 +2,6 @@
 
 namespace Roman\Parser\Init;
 
-
 class InitClass implements Init
 {
     /*
@@ -20,10 +19,11 @@ class InitClass implements Init
      * */
     public function makeUploadFolder()
     {
-        $result = FALSE;
-        if(!is_dir($this->folderpath)){
+        $result = false;
+        if (!is_dir($this->folderpath)) {
             $result = mkdir($this->folderpath);
         }
+
         return $result;
     }
 }

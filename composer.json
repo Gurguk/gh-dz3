@@ -1,0 +1,16 @@
+{
+    "name": "roman/dz-3",
+    "description": "Homework library",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Roman\\Parser\\": "source"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0"
+    }
+
+}
